@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    }
+
+    label{
+          font-size: 22px;
+          font-family: 'Courier New', Courier, monospace;
+         }
+
+    .one{
+        border:none;
+        border-bottom:3px solid rgba(0, 0,  0, 0.945);
+        outline:none;
+        height:40px;
+        color:#000000;
+        font-size: 12px;
+        background-color:transparent;
+        width: 300px;
+         }
+
+    h1{
+        margin-left: 490px;
+        color: #000;
+        text-shadow: 10px 10px 10px  #e0d9d9;
+        font-size: 40px;
+        position: absolute;
+     }
+
+    .box {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+        width: 400px;
+        height: 410px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background-color: rgba(122, 121, 121, 0.39);
+        margin-left: 150px;
+        margin-top: -170px;
+        box-shadow:20px 20px 60px rgba(25, 25, 25, 0.20),inset 90px 90px 80px #bebdbd;
+        margin-top: 270px;
+        margin-left: 700px;
+        }
+
+
+        ::placeholder{
+            color:rgba(76, 76, 77, 0.90);
+           }
+.two{
+      border-radius: 3px;
+      width: 100px; 
+      height: 30px; 
+      background-color: #6b6060;
+   }
+
+
+.two:hover{
+        background-color: #0000009d;
+        color: #fff;
+        font-style: none;
+  
+     }
+
+table{
+      margin-top: 370px;
+      margin-left: 540px;
+      position: absolute;
+      margin-top: 480px;
+      color: #fff;
+   }
+       
+   </style>
+</head>
+<body>
+    <img src="imagelogin1.jfif">
+   <b><h1>User Registrastion Form</h1></b><br><br>
+  
+    <form action="#" mathod="post" name="frm">
+        <input type="hidden" name="id" id="id">
+        <div class="box">
+        <label for="">NAME</label><br>
+        <input type="text" id="name" name="name" class="one"  placeholder="Enter tha name"><br><br>
+
+        <label for="">AGE</label><br>
+        <input type="number" name="age" id="age" class="one" placeholder="Enter tha Age" ><br><br>
+
+        <label for="">GENDER</label><br>
+        <input type="radio" name="gender" id="gender1" value="male">Male<br>
+        <input type="radio" name="gender" id="gender2" value="female">Female<br><br>
+    
+        <input type="button" value="Save" onclick="saveData()" class="two"><br>
+    
+    </div>
+    </form>
+    
+    <br>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="alldata"></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="crud.js"></script>
+
+</body>
+</html>
